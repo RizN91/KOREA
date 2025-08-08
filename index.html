@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Basic Tetris</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="sidebar">
+      <h1>Tetris</h1>
+      <div class="stats">
+        <div>Score: <span id="score">0</span></div>
+        <div>Lines: <span id="lines">0</span></div>
+        <div>Level: <span id="level">1</span></div>
+      </div>
+      <div class="controls">
+        <p>Controls</p>
+        <ul>
+          <li>Left/Right: Move</li>
+          <li>Up: Rotate</li>
+          <li>Down: Soft drop</li>
+          <li>Space: Hard drop</li>
+          <li>P: Pause • R: Restart</li>
+        </ul>
+      </div>
+    </div>
+    <canvas id="tetris" width="300" height="600"></canvas>
+  </div>
+
+  <script defer src="./script.js"></script>
+</body>
+</html>
